@@ -1,3 +1,5 @@
+import { IMAGES } from '../assets/images';
+
 export interface StreetArtistScene {
   sceneNumber: number; // 1 to 12
   timeOfDay: string;
@@ -28,7 +30,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Static lockdown on workbench with micro-slider drift',
     actionNote: 'X-Acto knife slices thick cardboard stencil. Gloved hands load 8 rattling spray cans into a weathered canvas backpack.',
     audioCue: 'Metallic ball bearings rattling inside pressurized cans; sharp blade slicing paper fibers; distant clock ticking.',
-    imageStill: '/src/assets/images/shot_macro_eye_reflection_1791998878651.jpg',
+    imageStill: IMAGES.shotMacroEyeReflection,
     compositionTip: 'Extreme shallow focus directs the audience to the rhythmic precision of stencil cutting before dawn.',
     problemFaced: {
       issue: 'Macro depth of field under 2mm causing blade tip to repeatedly blur out.',
@@ -46,7 +48,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Tracking backward from a chase e-bike 4 feet off the asphalt',
     actionNote: 'Hooded artist pedals fixed-gear bike through blue morning fog. Backpack jingles rhythmically with each pedal rotation.',
     audioCue: 'Bicycle chain hum, tire tread hissing on damp asphalt, muffled dawn foghorn in the harbor.',
-    imageStill: '/src/assets/images/shot_dutch_angle_noir_1791998843891.jpg',
+    imageStill: IMAGES.shotDutchAngleNoir,
     compositionTip: 'Low camera height captures wet pavement reflections beneath the rolling tires for forward kinetic energy.',
     problemFaced: {
       issue: 'Vibration from bike wheels shaking the gimbal rig on cobblestones.',
@@ -64,7 +66,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Slow crane pedestal rising from ground level to 12 feet',
     actionNote: 'Artist stands minuscule in an empty brick alley, looking up at an imposing 3-story unpainted brick warehouse wall.',
     audioCue: 'Gusting morning wind whistling through fire escape railings; lone crow caw.',
-    imageStill: '/src/assets/images/street_artist_wall_dawn_1792000109251.jpg',
+    imageStill: IMAGES.streetArtistWallDawn,
     compositionTip: 'Center the tiny silhouette against the massive vertical brick grid to convey David vs Goliath scale.',
     problemFaced: {
       issue: 'Early morning building shadows cut the brick wall in half with 6 stops of contrast.',
@@ -82,7 +84,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Gentle handheld breathing on EasyRig',
     actionNote: 'Paint-crusted fingerless gloves pop off a standard cap and snap on a specialized teal fat cap. Quick test spray into the dirt.',
     audioCue: 'Crisp plastic cap snap; hiss of pressurized pigment vapor.',
-    imageStill: '/src/assets/images/street_artist_closeup_spray_1792000110463.jpg',
+    imageStill: IMAGES.streetArtistCloseupSpray,
     compositionTip: 'Backlight the spray test so airborne pigment droplets illuminate like floating gold dust.',
     problemFaced: {
       issue: 'Airborne aerosol drift settling directly onto the front anamorphic lens element.',
@@ -100,7 +102,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Static ground-level hi-hat tilted 35° upward',
     actionNote: 'Artist sweeps a wide, confident arc of blazing cadmium orange across raw masonry. First line of the mural awakens.',
     audioCue: 'Continuous pressurized hiss echoing off alley walls; artist sharp exhale.',
-    imageStill: '/src/assets/images/street_artist_hero_low_angle_1792000111241.jpg',
+    imageStill: IMAGES.streetArtistHeroLowAngle,
     compositionTip: 'Angle up from the artist’s boots to glorify the physical athleticism of large-scale wall painting.',
     problemFaced: {
       issue: 'Low morning sun behind the roofline created intense lens flare that washed out the orange paint.',
@@ -118,7 +120,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Slow creep-in on a 3-foot slider',
     actionNote: 'From behind the artist’s shoulder, we watch fingers press intricate cardboard stencils against brick while applying misty charcoal shading.',
     audioCue: 'Staccato bursts of aerosol; cardboard rustling in breeze.',
-    imageStill: '/src/assets/images/shot_ots_interrogation_1791998878438.jpg',
+    imageStill: IMAGES.shotOtsInterrogation,
     compositionTip: 'Keep the artist’s shoulder in dark silhouette to create intimacy with the delicate craft.',
     problemFaced: {
       issue: 'Wind gusts kept blowing the stencil edges off the brick face, causing paint bleed.',
@@ -136,7 +138,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Lateral tracking past moving pedestrians',
     actionNote: 'Midday commuters in trench coats slow their stride; heads turn in curiosity and mild tension as the portrait takes shape.',
     audioCue: 'City crosswalk audio beeps, traffic rumble, murmuring voices: "Is that legal?"',
-    imageStill: '/src/assets/images/shot_dutch_angle_noir_1791998843891.jpg',
+    imageStill: IMAGES.shotDutchAngleNoir,
     compositionTip: 'The 15° tilted horizon conveys the artist’s underlying anxiety about public exposure and authority.',
     problemFaced: {
       issue: 'Pedestrians walking directly between the camera dolly track and the artist.',
@@ -154,7 +156,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Perpendicular crane arm hovering 14 feet directly overhead',
     actionNote: 'Looking straight down at wet pavement: 20 colored cans arranged by gradient, paint-dripped cardboard, chalk sketches, and half-empty coffee cup.',
     audioCue: 'Distantly echoing street sounds; metal can rolling across asphalt.',
-    imageStill: '/src/assets/images/shot_overhead_crime_scene_1791998878495.jpg',
+    imageStill: IMAGES.shotOverheadCrimeScene,
     compositionTip: 'Graphic perpendicular view transforms chaotic artist tools into an abstract geometric composition.',
     problemFaced: {
       issue: 'Crane shadow cast directly across the center of the spray can layout.',
@@ -172,7 +174,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Violent 90° whip snap right from wall to alley mouth',
     actionNote: 'Distand siren wails. The artist’s hand freezes mid-stroke; camera whips to flashing red and blue patrol lights reflecting in rain puddles.',
     audioCue: 'Sudden high-pitched tinnitus ring; heavy breath intake; distant siren whoop.',
-    imageStill: '/src/assets/images/shot_dolly_zoom_corridor_1791998877381.jpg',
+    imageStill: IMAGES.shotDollyZoomCorridor,
     compositionTip: 'Motion blur creates adrenaline and urgency, making the audience fear an immediate arrest.',
     problemFaced: {
       issue: 'Rolling shutter jello distortion bending vertical lamp poles during fast whip snap.',
@@ -190,7 +192,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Slow micro push-in along optical axis',
     actionNote: 'With surgical focus, artist sprays a tiny white dot highlight into the giant painted portrait’s eye. The mural instantly comes alive.',
     audioCue: 'Single soft puff of paint; ambient city silence; acoustic cello chord swelling.',
-    imageStill: '/src/assets/images/shot_macro_eye_reflection_1791998878651.jpg',
+    imageStill: IMAGES.shotMacroEyeReflection,
     compositionTip: 'Framing only the painted eye creates a sudden human emotional connection with cold concrete.',
     problemFaced: {
       issue: 'Fine aerosol mist clogging nozzle tip causing unpredictable splatter droplets on the eye.',
@@ -208,7 +210,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Steadicam tracking along the alley sidewalk at walking speed',
     actionNote: 'Golden hour sunset glints off brick. A gathered crowd of neighbors, skaters, and workers stands mesmerized, snapping phone photos of the finished 20-foot masterpiece.',
     audioCue: 'Camera phone shutter clicks, quiet murmurs of awe, sunset city breeze.',
-    imageStill: '/src/assets/images/street_artist_mural_crowd_1792000111973.jpg',
+    imageStill: IMAGES.streetArtistMuralCrowd,
     compositionTip: 'Use natural sunset backlight rim on the crowd silhouettes to contrast against the illuminated mural colors.',
     problemFaced: {
       issue: 'Rapidly fading magic hour twilight gave only a 12-minute window for the entire crowd scene.',
@@ -226,7 +228,7 @@ export const STREET_ARTIST_SCENES: StreetArtistScene[] = [
     cameraMovement: 'Crane rising and pulling backward into the darkness',
     actionNote: 'The artist slumps the backpack over one shoulder and slips silently into the foggy night. The luminous mural stays behind, glowing under warm streetlights.',
     audioCue: 'Fading footsteps on wet cobblestones; melancholic nocturnal city ambiance; gentle vinyl record crackle.',
-    imageStill: '/src/assets/images/street_artist_wall_dawn_1792000109251.jpg',
+    imageStill: IMAGES.streetArtistWallDawn,
     compositionTip: 'Let the artist dissolve into black shadows while keeping the mural vibrant and centered.',
     problemFaced: {
       issue: 'Extreme low light at 10 PM caused high sensor noise in shadow areas.',

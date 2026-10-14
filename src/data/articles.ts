@@ -1,4 +1,5 @@
 import { Article, StoryboardFrame, ProductionProblem } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const ARTICLES: Article[] = [
   {
@@ -9,7 +10,7 @@ export const ARTICLES: Article[] = [
     kicker: '01. Establishing Geography & Scale',
     title: 'The Solitary Wasteland — Mastering the Extreme Wide Shot',
     summary: 'How to shrink a protagonist against an indifferent world using wide optics and horizon geometry.',
-    imageStill: '/src/assets/images/shot_extreme_wide_desert_1791998822036.jpg',
+    imageStill: IMAGES.shotExtremeWideDesert,
     stillCaption: 'Figure pinned against black volcanic terrain under heavy overcast skies (Arri Alexa LF + 28mm Anamorphic).',
     compositionInsight: 'Positioning the subject on the lower-right third line beneath an imposing 70% sky mass exaggerates loneliness without dialogue.',
     storyboard: {
@@ -53,7 +54,7 @@ export const ARTICLES: Article[] = [
     kicker: '02. Psychological Tension & Distortion',
     title: 'The 15° Disorientation — Subverting Reality with the Dutch Angle',
     summary: 'Tilting the horizon axis to telegraph impending danger, delirium, and psychological dread.',
-    imageStill: '/src/assets/images/shot_dutch_angle_noir_1791998843891.jpg',
+    imageStill: IMAGES.shotDutchAngleNoir,
     stillCaption: 'Wet cyberpunk back-alley with 14-degree canted horizon reflecting cyan and amber neon signs.',
     compositionInsight: 'The skewed vertical lines of street signs and rain pipes force the viewer’s neck muscles to tense instinctively.',
     storyboard: {
@@ -97,7 +98,7 @@ export const ARTICLES: Article[] = [
     kicker: '03. Hierarchy & Authority in Frame',
     title: 'The Low-Angle Monolith — Granting Uncontested Dominance',
     summary: 'Placing the optical center below chest level to project unshakeable authority and physical menace.',
-    imageStill: '/src/assets/images/shot_low_angle_hero_1791998845343.jpg',
+    imageStill: IMAGES.shotLowAngleHero,
     stillCaption: 'Officer towering over brutalist rooftop parapet against dusk cloud layers, golden rim backlight.',
     compositionInsight: 'The camera looking upward causes the subject’s shoulders to clip the horizon, creating a fortress silhouette.',
     storyboard: {
@@ -141,7 +142,7 @@ export const ARTICLES: Article[] = [
     kicker: '04. Optical Illusion & Sensory Shock',
     title: 'The Spatial Rift — Executing the Hitchcockian Dolly Zoom',
     summary: 'Counter-balancing camera forward travel with an exact optical zoom-out to stretch background perspective.',
-    imageStill: '/src/assets/images/shot_dolly_zoom_corridor_1791998877381.jpg',
+    imageStill: IMAGES.shotDollyZoomCorridor,
     stillCaption: 'Sterile hospital hallway corridors warping backwards while patient stays static in frame center.',
     compositionInsight: 'Foreground subject size stays 100% constant while the hallway walls visually recede at alarming velocity.',
     storyboard: {
@@ -185,7 +186,7 @@ export const ARTICLES: Article[] = [
     kicker: '05. Eye-Line Calibrations & Closeness',
     title: 'The Dirty Frame — Staging Intimacy and Danger Over the Shoulder',
     summary: 'Using foreground human obstruction to create spatial geography, tension, and eavesdropping intimacy.',
-    imageStill: '/src/assets/images/shot_ots_interrogation_1791998878438.jpg',
+    imageStill: IMAGES.shotOtsInterrogation,
     stillCaption: 'Gritty detective interrogation room with dirty wool overcoat shoulder framing suspect in smoky light.',
     compositionInsight: 'The dark foreground silhouette covers 28% of the left frame, creating a claustrophobic sightline barrier.',
     storyboard: {
@@ -229,7 +230,7 @@ export const ARTICLES: Article[] = [
     kicker: '06. Biological Scale & Vulnerability',
     title: 'The Micro Landscape — Dissecting Soul in the Extreme Close-Up',
     summary: 'Focusing on single millimeter facial gestures: the involuntary pupil dilation, tremor, and iris reflection.',
-    imageStill: '/src/assets/images/shot_macro_eye_reflection_1791998878651.jpg',
+    imageStill: IMAGES.shotMacroEyeReflection,
     stillCaption: 'Amber iris in razor-thin depth of field reflecting the burning city horizon across cornea curvature.',
     compositionInsight: 'Magnification eliminates all environmental comfort, leaving the viewer trapped with the subject’s raw honesty.',
     storyboard: {
@@ -273,7 +274,7 @@ export const ARTICLES: Article[] = [
     kicker: '07. Determinism & Graphic Geometry',
     title: 'The Omniscient Grid — 90-Degree Top-Down Overhead Geometry',
     summary: 'Removing the horizon line entirely to turn city streets and human movements into a fatalistic chess board.',
-    imageStill: '/src/assets/images/shot_overhead_crime_scene_1791998878495.jpg',
+    imageStill: IMAGES.shotOverheadCrimeScene,
     stillCaption: 'Rain-slicked intersection at midnight with black umbrella silhouettes, yellow taxi cab, and street striping.',
     compositionInsight: 'Strict perpendicular orientation flattens 3D depth into architectural graphic design.',
     storyboard: {
@@ -317,7 +318,7 @@ export const ARTICLES: Article[] = [
     kicker: '08. Physical Machinery & On-Set Operations',
     title: 'Anatomy of the Heavy Rig — The DP & Focus Puller Synergy',
     summary: 'The mechanical ecosystem behind smooth cinematic motion: matte boxes, follow focus wireless arrays, and dolly mechanics.',
-    imageStill: '/src/assets/images/shot_cinematographer_camera_1791998845380.jpg',
+    imageStill: IMAGES.shotCinematographerCamera,
     stillCaption: 'Director of photography and 1st AC tracking period drama actors along a 30-foot steel dolly run with haze.',
     compositionInsight: 'The camera operator frames with her eye in the EVF while the 1st AC pulls focus on a remote monitor without looking at the set.',
     storyboard: {
@@ -361,7 +362,7 @@ export const ARTICLES: Article[] = [
     kicker: '09. Kinetic Speed & In-Camera Transitions',
     title: 'The Blurred Pivot — Designing Seamless In-Camera Whip Cuts',
     summary: 'Snapping the camera 90 degrees at lightning speed to mask scene transitions without CGI fades.',
-    imageStill: '/src/assets/images/shot_dutch_angle_noir_1791998843891.jpg',
+    imageStill: IMAGES.shotDutchAngleNoir,
     stillCaption: 'Fast panning motion blur transforming architectural lines into kinetic streaks of neon color.',
     compositionInsight: 'Centrifugal blur masks the hard edit point between two completely different locations filmed days apart.',
     storyboard: {
@@ -405,7 +406,7 @@ export const ARTICLES: Article[] = [
     kicker: '10. Multiple Planes of Dramatic Truth',
     title: 'The Dual Horizon — Deep Focus Framing and Split-Field Optics',
     summary: 'Holding an extreme close-up in the immediate foreground and an action block 50 feet away in simultaneous razor focus.',
-    imageStill: '/src/assets/images/shot_ots_interrogation_1791998878438.jpg',
+    imageStill: IMAGES.shotOtsInterrogation,
     stillCaption: 'Two simultaneous sharp planes: conspirator whisper in foreground and guard approaching in deep background.',
     compositionInsight: 'Forcing the viewer to read two simultaneous stories in a single uncut frame denies them the comfort of editing.',
     storyboard: {
