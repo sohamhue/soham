@@ -1,0 +1,6 @@
+{
+  "name": "CINEFRAME — Director's Shot Bible & Production Journal",
+  "description": "An interactive visual blog dissecting 10 iconic camera shots, storyboard animatics, and hard-won on-set problem-solving solutions with real cinematographic stills.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
