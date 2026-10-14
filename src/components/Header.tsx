@@ -7,6 +7,8 @@ interface HeaderProps {
   savedShotsCount: number;
   onOpenSavedDrawer: () => void;
   onOpenDirectory: () => void;
+  activeView: 'street-artist' | 'articles';
+  onSelectView: (view: 'street-artist' | 'articles') => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -14,7 +16,9 @@ export const Header: React.FC<HeaderProps> = ({
   onSelectPage,
   savedShotsCount,
   onOpenSavedDrawer,
-  onOpenDirectory
+  onOpenDirectory,
+  activeView,
+  onSelectView
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-[#07080c]/90 backdrop-blur-md border-b border-slate-800/80">
@@ -33,43 +37,50 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         {/* Zone 2: 4-5 single-line clean text nav links */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
           <button
-            onClick={() => onOpenDirectory()}
-            className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
+            onClick={() => onSelectView('street-artist')}
+            className={`transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
+              activeView === 'street-artist' ? 'text-amber-400 font-semibold' : 'hover:text-amber-400'
+            }`}
+          >
+            <Clapperboard className="w-4 h-4 text-amber-400" />
+            <span>Street Artist Storyboard (12 Scenes)</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onSelectView('articles');
+              onOpenDirectory();
+            }}
+            className={`transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
+              activeView === 'articles' ? 'text-amber-400 font-semibold' : 'hover:text-amber-400'
+            }`}
           >
             <Layers className="w-4 h-4 text-slate-400" />
             <span>10 Articles Index</span>
           </button>
 
           <button
-            onClick={() => onSelectPage(11)}
-            className={`transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
-              currentPage === 11 ? 'text-amber-400 font-semibold' : 'hover:text-amber-400'
-            }`}
-          >
-            <Clapperboard className="w-4 h-4 text-slate-400" />
-            <span>Storyboard Lab (P11)</span>
-          </button>
-
-          <button
-            onClick={() => onSelectPage(12)}
-            className={`transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
-              currentPage === 12 ? 'text-amber-400 font-semibold' : 'hover:text-amber-400'
-            }`}
-          >
-            <AlertCircle className="w-4 h-4 text-slate-400" />
-            <span>Problems Faced (P12)</span>
-          </button>
-
-          <button
-            onClick={() => onSelectPage(currentPage <= 10 ? currentPage : 1)}
-            className={`transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
-              currentPage <= 10 ? 'text-amber-400 font-semibold' : 'hover:text-amber-400'
-            }`}
+            onClick={() => {
+              onSelectView('articles');
+              onSelectPage(11);
+            }}
+            className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
           >
             <BookOpen className="w-4 h-4 text-slate-400" />
-            <span>Shot Reading View</span>
+            <span>Storyboard Lab</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onSelectView('articles');
+              onSelectPage(12);
+            }}
+            className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-1.5"
+          >
+            <AlertCircle className="w-4 h-4 text-slate-400" />
+            <span>Problems Faced</span>
           </button>
         </nav>
 
